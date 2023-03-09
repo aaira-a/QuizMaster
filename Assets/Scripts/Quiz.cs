@@ -9,6 +9,6 @@ public class Quiz : MonoBehaviour
     [SerializeField] QuestionSO question;
     void Start()
     {
-        
+        questionText.text = question.GetQuestion();
     }
 }
