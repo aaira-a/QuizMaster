@@ -511,6 +511,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8798385862914452316, guid: 28b578adac90dd64c987a4a731f2907a, type: 3}
   m_PrefabInstance: {fileID: 653287201}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &653287203 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8798385862914452315, guid: 28b578adac90dd64c987a4a731f2907a, type: 3}
+  m_PrefabInstance: {fileID: 653287201}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &823143964
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,6 +835,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8798385862914452316, guid: 28b578adac90dd64c987a4a731f2907a, type: 3}
   m_PrefabInstance: {fileID: 1179152651}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1179152653 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8798385862914452315, guid: 28b578adac90dd64c987a4a731f2907a, type: 3}
+  m_PrefabInstance: {fileID: 1179152651}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1423247728
 GameObject:
   m_ObjectHideFlags: 0
@@ -947,6 +957,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questionText: {fileID: 823143966}
   question: {fileID: 11400000, guid: 30a7991ea3ce10040b1d685e6971d294, type: 2}
+  answerButtons:
+  - {fileID: 8798385863223396249}
+  - {fileID: 653287203}
+  - {fileID: 1745647285}
+  - {fileID: 1179152653}
 --- !u!1 &1475604082
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,6 +1411,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8798385862914452316, guid: 28b578adac90dd64c987a4a731f2907a, type: 3}
   m_PrefabInstance: {fileID: 1745647283}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1745647285 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8798385862914452315, guid: 28b578adac90dd64c987a4a731f2907a, type: 3}
+  m_PrefabInstance: {fileID: 1745647283}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8798385863223396248
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1493,3 +1513,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 28b578adac90dd64c987a4a731f2907a, type: 3}
+--- !u!1 &8798385863223396249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8798385862914452315, guid: 28b578adac90dd64c987a4a731f2907a, type: 3}
+  m_PrefabInstance: {fileID: 8798385863223396248}
+  m_PrefabAsset: {fileID: 0}
