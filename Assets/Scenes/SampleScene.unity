@@ -962,6 +962,8 @@ MonoBehaviour:
   - {fileID: 653287203}
   - {fileID: 1745647285}
   - {fileID: 1179152653}
+  defaultAnswerSprite: {fileID: 21300000, guid: 10f58b5fc15b7074e9208b9c225992ed, type: 3}
+  correctAnswerSprite: {fileID: 21300000, guid: 2af57eb84e38df74f93aa9ea3ced586b, type: 3}
 --- !u!1 &1475604082
 GameObject:
   m_ObjectHideFlags: 0

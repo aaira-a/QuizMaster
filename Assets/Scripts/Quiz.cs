@@ -8,6 +8,8 @@ public class Quiz : MonoBehaviour
     [SerializeField] TextMeshProUGUI questionText;
     [SerializeField] QuestionSO question;
     [SerializeField] GameObject[] answerButtons;
+    [SerializeField] Sprite defaultAnswerSprite;
+    [SerializeField] Sprite correctAnswerSprite;
 
     void Start()
     {
