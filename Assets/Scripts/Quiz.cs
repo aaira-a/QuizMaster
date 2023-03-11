@@ -11,6 +11,7 @@ public class Quiz : MonoBehaviour
     [SerializeField] GameObject[] answerButtons;
     [SerializeField] Sprite defaultAnswerSprite;
     [SerializeField] Sprite correctAnswerSprite;
+    int correctAnswerIndex;
 
     void Start()
     {
@@ -25,10 +26,20 @@ public class Quiz : MonoBehaviour
 
     public void OnAnswerSelected(int index)
     {
+        Image buttonImage;
+
         if(index == question.GetCorrectAnswerIndex())
         {
             questionText.text = "Correct!";
-            Image buttonImage = answerButtons[index].GetComponent<Image>();
+            buttonImage = answerButtons[index].GetComponent<Image>();
+            buttonImage.sprite = correctAnswerSprite;
+        }
+        else
+        {
+            correctAnswerIndex = question.GetCorrectAnswerIndex();
+            string correctAnswer = question.GetAnswer(correctAnswerIndex);
+            questionText.text = $"Sorry, the correct answer was:\n {correctAnswer}";
+            buttonImage = answerButtons[correctAnswerIndex].GetComponent<Image>();
             buttonImage.sprite = correctAnswerSprite;
         }
     }
