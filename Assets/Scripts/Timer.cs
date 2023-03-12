@@ -8,6 +8,7 @@ public class Timer : MonoBehaviour
     [SerializeField] float timeToShowCorrectAnswer = 10f;
     
     public bool isAnsweringQuestion = false;
+    public float fillFraction;
 
     float timerValue;
 
@@ -22,6 +23,11 @@ public class Timer : MonoBehaviour
 
         if(isAnsweringQuestion)
         {
+            if(timerValue >0)
+            {
+                fillFraction = (timerValue / timeToCompleteQuestion);
+            }
+
             if(timerValue <=0)
             {
                 isAnsweringQuestion = false;
@@ -30,6 +36,11 @@ public class Timer : MonoBehaviour
         }
         else
         {
+            if(timerValue >0)
+            {
+                fillFraction = (timerValue / timeToShowCorrectAnswer);
+            }
+
             if(timerValue <=0)
             {
                 isAnsweringQuestion = true;
@@ -37,6 +48,6 @@ public class Timer : MonoBehaviour
             }
         }
 
-        Debug.Log(timerValue);
+        Debug.Log($"isAnsweringQuestion: {isAnsweringQuestion}, timerValue: {timerValue}, fillFraction: {fillFraction}");
     }
 }
