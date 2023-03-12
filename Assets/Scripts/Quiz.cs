@@ -22,7 +22,18 @@ public class Quiz : MonoBehaviour
 
     void Start()
     {
+        timer = FindObjectOfType<Timer>();
         GetNextQuestion();
+    }
+
+    void Update()
+    {
+        timerImage.fillAmount = timer.fillFraction;
+        if(timer.loadNextQuestion)
+        {
+            GetNextQuestion();
+            timer.loadNextQuestion = false;
+        }
     }
 
     public void OnAnswerSelected(int index)
@@ -44,6 +55,7 @@ public class Quiz : MonoBehaviour
             buttonImage.sprite = correctAnswerSprite;
         }
         SetButtonState(false);
+        timer.CancelTimer();
     }
 
     void GetNextQuestion()
