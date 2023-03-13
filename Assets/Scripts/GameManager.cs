@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -23,5 +24,10 @@ public class GameManager : MonoBehaviour
             quiz.gameObject.SetActive(false);
             endScreen.gameObject.SetActive(true);
         }
+    }
+
+    public void OnReplayLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
